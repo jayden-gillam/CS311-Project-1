@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.shirt-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.shirt-container > img {
+    background-color: aquamarine;
+    width: 25%;
+}
+.description-container {
+    float: left;
+    width: 45%;
+}
+.create-container {
+    float: right;
+    border: 1px solid black;
+    width: 400px;
+}
+
+.header {
+    background-color: bisque;
+    font-family: "Anton";
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
