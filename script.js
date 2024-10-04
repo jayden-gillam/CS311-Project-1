@@ -14,7 +14,7 @@ function shirtCreate() {
     const dropdown = document.getElementById("color");
     let color = dropdown.value;
     let shirtColorImg = document.createElement("img");
-    shirtColorImg.src = "shirts/"+ color + "shirt.png"
+    shirtColorImg.src = color + "shirt.png"
     relativeDiv.appendChild(shirtColorImg);
     relativeDiv.appendChild(absoluteDiv)
 
