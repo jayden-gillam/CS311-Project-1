@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="/script.js" defer></script>
     <title>Create</title>
 </head>
 <body>
     <div class="header">
         <h1>Screeners Ink</h1>
         <nav>
-            <a href="index.html">Products</a> |
-            <a href="about.html">About</a> |
+            <a href="index.html">About</a> |
+            <a href="products.html">Products</a> |
             <a href="create.html">Create</a>
         </nav>
     </div>
@@ -21,16 +22,46 @@
     </div>
     <div class="create-container">
         <label for="shirt">Shirt Color:</label>
-        <input type="color" id="shirt" name="shirt" value="#ffffff" />
+        <select name="color" id="color">
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="grey">Grey</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="pink">Pink</option>
+            <option value="purple">Purple</option>
+            <option value="brown">Brown</option>
+        </select>
         <br>
         <label for="graphic">Upload a graphic:</label>
         <input type="file" id="graphic" name="graphic" accept="image/png, image/jpeg" />
         <br>
         <label for="text">Text:</label>
         <input type="text" id="text" name="text"/>
+        <select name="textColor" id="textColor">
+            <option value="white">White</option>
+            <option value="black">Black</option>
+        </select>
         <br>
-        <button>Create!</button>
-        <img src="whiteshirt.png" alt="shirt">
+        <div id="design"></div>
+        
+        <!-- T-Shirt Design Div Stucture -->
+
+        <!-- <div class="relative">
+            <img src="redshirt.png" alt="">
+            <div class="absolute">
+                <img src="beach.png" alt="" height="100" width="100">
+                <div class="text">
+                    Hello there world dfhjshdfjk jdfkasjfkasjklf
+                </div>
+            </div>
+        </div> -->
+
+        <button onclick="shirtCreate()">Create!</button>
     </div>
+
 </body>
 </html>

@@ -1,13 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: lightblue;
+}
+
+.header {
+    background-color: bisque;
+    font-family: "Anton";
+    padding: 5px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+a:active {
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.contact {
+    display: inline-block;
+    border: 5px solid black;
+    padding: 5px;
+}
+.contact h2 {
+    font-family: 'Franklin Gothic Heavy';
+    margin: 0;
+    padding-bottom: 5px;
+}
+.contact img {
+    margin: 0;
+    height: 125px;
+}
+
+.contactText {
+    font-family: 'Franklin Gothic Light';
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contactText h3 {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.contactText h4 {
+    margin: 0;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium'
+}
+
+
 .shirt-container {
     display: flex;
     flex-wrap: nowrap;
 }
-.shirt-container > img {
-    background-color: aquamarine;
-    width: 25%;
-}
+
 .description-container {
     float: left;
     width: 45%;
@@ -18,11 +87,25 @@
     width: 400px;
 }
 
-.header {
-    background-color: bisque;
-    font-family: "Anton";
+
+
+div#relative {
+    position: relative;
+    width: 212px;
+    height: 208px;
 }
 
-body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+div#absolute {
+    position: absolute;
+    top: 20%;
+    right: 27%;
 }
+
+div#text {
+    position: absolute;
+    text-align: center;
+    width: 101px;
+    height: 55px;
+    overflow: hidden;
+}
+
