@@ -41,14 +41,17 @@ a:active {
 
 .contact {
     display: inline-block;
+    background-color: aliceblue;
     border: 5px solid black;
     padding: 5px;
 }
+
 .contact h2 {
     font-family: 'Franklin Gothic Heavy';
     margin: 0;
     padding-bottom: 5px;
 }
+
 .contact img {
     margin: 0;
     height: 125px;
@@ -71,18 +74,45 @@ a:active {
     font-family: 'Franklin Gothic Medium'
 }
 
+.vinyl {
+    font-family: 'Franklin Gothic Light';
+    display: inline-block;
+    vertical-align: top;
+}
+
+.screen {
+    font-family: 'Franklin Gothic Light';
+    display: inline-block;
+    vertical-align: top;
+}
+
+.embroidery {
+    font-family: 'Franklin Gothic Light';
+    display: inline-block;
+    vertical-align: top;
+}
 
 .shirt-container {
     display: flex;
     flex-wrap: nowrap;
 }
 
-.description-container {
-    float: left;
+.description-container h2 {
+    margin: auto;
+    text-align: center;
     width: 45%;
 }
+
+.description-container p {
+    margin: auto;
+    text-align: center;
+    width: 45%;
+}
+
 .create-container {
-    float: right;
+    background-color: white;
+    margin: auto;
+    text-align: center;
     border: 1px solid black;
     width: 400px;
 }
